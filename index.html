@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Manager</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="h-screen m-5 bg-gray-100">
+    <h1 class="text-5xl font-extrabold text-center mt-12">Veterinary Patient <span class="text-cyan-600">Monitoring</span></h1>
+    <div class="container mx-auto mt-10 md:flex gap-10 ">
+        <div id="left" class="flex flex-1 flex-col">
+            <h2 class="font-extrabold text-3xl mb-3 text-center">Patient Monitoring</h2>
+            <p class="text-center text-lg">Add patient and <span class="text-cyan-600 font-bold">Monitoring them</span></p>
+            <form id="appointment-form" class="flex flex-col bg-white mt-10 rounded-lg shadow-md px-5 py-10  mb-10">
+                <label class="uppercase font-bold text-sm mb-2 text-gray-500" for="pet">Pet Name:</label>
+                <input id="pet" class=" border border-gray-200 rounded-md p-2 mb-3" type="text" name="pet"  placeholder="Pet Name">
+                <label class="uppercase font-bold text-sm mb-2 text-gray-500" for="owner">Owner Name:</label>
+                <input id="owner" class=" border border-gray-200 rounded-md p-2 mb-3" type="text" name="owner"  placeholder="owner Name">
+                <label  class="uppercase font-bold text-sm mb-2 text-gray-500" for="email">Email Contact:</label>
+                <input id="email" class=" border border-gray-200 rounded-md p-2 mb-3" type="text" name="email"  placeholder="E-mail Contact">
+                <label class="uppercase font-bold text-sm mb-2 text-gray-500" for="date">Discharge Date:</label>
+                <input id="date" class=" border border-gray-200 rounded-md p-2 mb-3" type="date" name="date" >
+                <label class="uppercase font-bold text-sm mb-2 text-gray-500" for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" class=" border border-gray-200 rounded-md p-2 mb-3" name="symptoms"  placeholder="Patients Symptoms"></textarea>
+                <input id="appointment-submit" class="w-full bg-cyan-600 p-2 text-white uppercase text-sm font-bold" type="submit" value="Register Patient">
+            </form>
+        </div>
+        <div id="right" class="flex flex-1 flex-col">
+            <h2 class="font-extrabold text-3xl mb-3 text-center">Patient List</h2>
+            <p class="text-center text-lg" >Manage your Patients and <span class="text-cyan-600 font-bold">Appointments</span></p>
+            <div id="appointment-list" class="lex flex-col bg-white mt-10 rounded-lg shadow-md px-5 py-10  mb-10">
+                <p class="text-center">There are no patients</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
