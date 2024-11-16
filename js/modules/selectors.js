@@ -1,0 +1,8 @@
+export const petInput = document.querySelector('#pet')
+export const ownerInput = document.querySelector('#owner')
+export const emailInput = document.querySelector('#email')
+export const dateInput = document.querySelector('#date')
+export const symptomsInput = document.querySelector('#symptoms')
+export const formAp = document.querySelector('#appointment-form')
+export const appList = document.querySelector('#appointment-list')
+export const btnForm = document.querySelector('#appointment-form input[type="submit"]')
