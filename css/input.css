@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .input-form {
+        @apply border border-gray-200 rounded-md p-2 mb-3
+    }
+
+    .label-form{
+        @apply uppercase font-bold text-sm mb-2 text-gray-500
+    }
+}
